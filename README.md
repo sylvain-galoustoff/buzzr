@@ -7,5 +7,5 @@ Le jeu enregistre l’ordre dans lequel les joueurs on buzzé, permettant au MJ 
 Notez que l’application ne prend pas en charge la communication vocale, elle nécessite une application tierce telle que Discord, Skype ou autre.
 
 ## Technos
-Front-end : React
-Back-end : Firebase / Firestore
+Front-end : React  
+Back-end : Firebase / Firestore  
