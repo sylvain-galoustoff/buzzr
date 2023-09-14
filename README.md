@@ -10,5 +10,5 @@ Notez que l’application ne prend pas en charge la communication vocale, elle n
 Front-end : React  
 Back-end : Firebase / Firestore  
 
-## Demo
-[https://demo.sylvain-galoustoff.dev/buzzr]https://demo.sylvain-galoustoff.dev/buzzr
+## Demo  
+https://demo.sylvain-galoustoff.dev/buzzr
