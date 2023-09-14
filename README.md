@@ -9,3 +9,6 @@ Notez que l’application ne prend pas en charge la communication vocale, elle n
 ## Technos
 Front-end : React  
 Back-end : Firebase / Firestore  
+
+## Demo
+[https://demo.sylvain-galoustoff.dev/buzzr]https://demo.sylvain-galoustoff.dev/buzzr
