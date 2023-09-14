@@ -1,0 +1,245 @@
+@import "reset.scss";
+@import "vars.scss";
+@import "framework.scss";
+
+html {
+	font-size: 22px;
+	font-weight: 400;
+}
+
+html, body, #root, .page {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	font-family: $font;
+	background-color: $bg;
+	color: $light;
+}
+
+/* BUZZR */
+#on-board, #start-as-mj {
+	display: flex;
+	flex-direction: column;
+}
+
+#buzzr-wrapper {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	padding-top: 300px;
+	position: relative;
+}
+
+#buzzr-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#buzzr {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background: $gradient;
+	box-shadow: $shadow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	cursor: pointer;
+	@include trans;
+
+	&:active {
+		box-shadow: 0 0 0 rgba(black, 0);
+	}
+}
+
+#buzzr-title {
+	font-size: 4rem;
+	font-weight: 700;
+	transform: rotate(-15deg);
+	text-shadow: $shadow;
+}
+
+#buzzr-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	svg {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 4rem;
+	}
+	
+}
+
+#buzzr-text {
+	margin-top: $marge*2;
+	text-align: center;
+}
+
+#buzzr-subtitle {
+	margin-bottom: $marge;
+}
+
+/* ONBOARD */
+#start-as-mj-link-wrapper {
+	text-align: center;
+}
+
+#start-as-mj-link {
+	text-decoration: underline;
+}
+
+/* START AS MJ */
+#player-session-input {
+
+	position: absolute;
+	top: 250px; left: 50%;
+	z-index: 10;
+
+	& > div{
+		transform: translateX(-50%);
+	}
+
+	[type="text"] {
+		width: 200px;
+	}
+
+}
+
+#session-number {
+	font-size: 2rem;
+	letter-spacing: $marge;
+}
+
+/* GAME */
+#game {
+	display: flex;
+	flex-direction: column;
+}
+
+#gaming-zone {
+	display: flex;
+	// flex: 1;
+	height: calc(100% - 80px)
+}
+
+.part {
+	width: 33.33%;
+	padding: $marge*2;
+	position: relative;
+}
+
+#ranking, #buzztime {
+	max-width: 400px;
+	overflow-y: auto;
+}
+
+#buzzr-part {
+	flex: 1;
+}
+
+/* BET */
+#bet-wrapper {
+	position: absolute;
+	top: $marge*2;
+	left: 50%;
+	width: 100%;
+	max-width: 400px;
+	z-index: 10;
+}
+
+#bet {
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+#bet-header {
+	justify-content: center;
+	border-bottom: 2px solid $bg;
+}
+
+#bet-body {
+	display: flex;
+}
+
+.bet-part {
+	width: 50%;
+	height: 80px;
+	padding: $marge*2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $card;
+
+	[type="number"] {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+#bonus {
+	border-right: 1px solid $bg;
+}
+
+#malus {
+	border-left: 1px solid $bg;
+}
+
+/* GAME FOOTER */
+
+#game-footer {
+	display: flex;
+}
+
+.footer-part {
+	flex: 1;
+}
+
+#footer-left, #footer-right {
+	display: flex;
+	align-items: center;
+}
+
+#footer-left {
+	justify-content: flex-start;
+
+	p {
+		margin-right: $marge*2;
+	}
+
+}
+
+#footer-right {
+	justify-content: flex-end;
+
+	span {
+		margin-left: $marge*2;
+	}
+
+	svg {
+		font-size: 1rem;
+	}
+}
+
+#stop-game, #reset-game {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	svg {
+		margin-left: $marge;
+	}
+}
+
+#player-name-value {
+	text-transform: capitalize;
+}
+
+@import "responsive.scss";

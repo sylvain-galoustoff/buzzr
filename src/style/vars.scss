@@ -1,0 +1,20 @@
+$gradient: radial-gradient(50% 50.00% at 50% 50.00%, #d67263 38.54%, #4E1D17 100%);
+$primary: #d67263;
+$light: #fff;
+$bg: #282F39;
+$card: #36404E;
+$card-header: #424F62;
+
+$font: 'Mitr', sans-serif;
+
+$marge: 8px;
+
+$shadow: 4px 4px 4px rgba(black, .5);
+
+@mixin dev( $width: 1px, $color: red ) {
+    border: $width solid $color;
+}
+
+@mixin trans($time: .25s) {
+    transition: all $time ease-out;
+}

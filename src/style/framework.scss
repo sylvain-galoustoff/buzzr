@@ -1,0 +1,143 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+h1, .h1 {
+    color: $primary;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+a {
+    color: $light;
+    text-decoration: none;
+}
+
+.help {
+    font-size: .7rem;
+    opacity: .8;
+    font-weight: 400;
+}
+
+/* FORMS */
+.form-group {
+
+    &.inline > div {
+        display: flex;
+    }
+
+    [type="text"] {
+        margin: 0 $marge;
+    }
+
+}
+
+[type="text"], [type="number"] {
+    font-family: $font;
+    font-size: 1rem;
+    color: $light;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $light;
+    opacity: .75;
+    @include trans;
+
+    &:focus {
+        opacity: 1;
+        outline: none;
+    }
+
+    &::placeholder {
+        color: $light;
+    }
+}
+
+/* CARDS */
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: $marge*2;
+    background-color: $card-header;
+    border-bottom: 2px solid $bg;
+}
+
+.card {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 80px;
+    background-color: $card;
+    border-bottom: 2px solid $bg;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    border-right: 1px solid $bg;
+}
+
+.card-content {
+    flex: 1;
+    padding: $marge*2;
+    border-left: 1px solid $bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-name {
+    text-transform: capitalize;
+}
+
+.card-footer {
+    width: 80px;
+    border-left: 2px solid $bg;
+    display: flex;
+    flex-direction: column;
+
+    .card-footer-actions:first-child {
+        border-bottom: 1px solid $bg;
+    }
+
+    .card-footer-actions:last-child {
+        border-top: 1px solid $bg;
+    }
+}
+
+.card-footer-actions {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+	padding: 0 $marge*2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    font-size: .7rem;
+}
+
+/* ANIMATIONS */
+.frame-in {
+    animation: framein .25s ease-in-out backwards;
+}
+
+@keyframes framein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

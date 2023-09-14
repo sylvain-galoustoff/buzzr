@@ -1,0 +1,71 @@
+@media screen and (max-width: 820px) {
+    
+    #buzzr {
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    
+    #gaming-zone {
+        flex-direction: column;
+    }
+    
+    .part {
+        width: 100%;
+    }
+    
+    #ranking, #buzztime {
+        max-width: none;
+    }
+    
+    #ranking {
+        display: none;
+    }
+    
+    #buzzr-wrapper {
+        padding-top: 200px;
+    }
+    
+    .footer-part {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #footer-left, #footer-right {
+        justify-content: center;
+        
+        & > *:first-child {
+            margin-bottom: $marge;
+        }
+        
+        svg {
+            font-size: .7rem;
+        }
+    }
+    
+    #footer-left {
+        align-items: flex-start;
+    }
+    
+    #footer-right {
+        align-items: flex-end;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+
+    #bet-wrapper {
+        top: 0;
+    }
+
+    #game-footer {
+        svg {
+            display: none;
+        }
+    }
+
+}
