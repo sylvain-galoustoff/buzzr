@@ -1,4 +1,4 @@
-# buzzr
+# Buzzr
 
 Buzzr est un jeu où un Maître de jeu (MJ) pose des questions à d’autres joueurs qui doivent appuyer sur un bouton – le Buzzr – avant de pouvoir répondre.
 
